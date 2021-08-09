@@ -179,7 +179,7 @@ arrrrrr = [4564, 41, 264, 2, 86, 26 ]
 const ex13 =function(){
 
 let largest = (element) => element =  Math.max(...arrrrrr)
-console.log('largest number is ' + largest)
+//console.log('largest number is ' + largest)
 console.log('index of largest  number is ' + (arrrrrr.findIndex(largest)))
        
    //let max_num_index = max_number[i]
@@ -190,24 +190,67 @@ console.log('index of largest  number is ' + (arrrrrr.findIndex(largest)))
    ex13() 
 
 /* 14)Create a function to get the largest even number from an array of integers.*/
+arrrrrr2 = [4564, 41, 264, 2, 86, 26, 586855 ]
+
+ex14 = function(){
+  let superBigNum =  Math.max(...arrrrrr2)
+  console.log(superBigNum)
+}
+console.log('_________ 14')
+ex14()
+
+
+/*
+16) Create a function to check from two given integers, whether one is positive and another one is negative.*/
+ex16 = function(num1, num2) {
+  if (num1 <0  || num2 < 0){
+    console.log('one of numbers id negative')
+  }
+  else if(num1 < 0 && num2 <0){ console.log('both are --')}
+  else{console.log('Both are ++')}
+}
+console.log('__________16')
+ex16(58,-58)
+
+
+
+
+/* 17) 
+Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
+*/
+
+const ex17 = function(myStr){
+let helloStr  ="Hello"
+    let new_string = helloStr.toLowerCase()
+    let small = new_string.slice(0,3)
+    //let new_string2 = new_string.toUpperCase[3,4]
+    let cut = new_string.slice(3)
+    console.log(small + cut.toUpperCase()    ) 
+       
+   
+    
+}
+console.log('_____17')
+ex17()
 
 
 
 /*
-16)
-
-Create a function to check from two given integers, whether one is positive and another one is negative.
-
-17)
-
-Create a function to create new string with first 3 characters are in lower case and the others in upper case. If the string length is less than 3 convert all the characters in upper case. 
-
 18)
 
-Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.
+Create a function to calculate the sum of the two given integers, If the sum is in the range 50..80 return 65 other wise return 80.*/
+ex18 = function(num1, num2){
+  let sum = num1 + num2 
+  if(sum > 50 && sum < 80){return 65 }
+  else{ return 80}
+  }
+console.log('________18')
+ex18(558,5)
 
+
+
+/*
 19)
-
 Create a function to convert a number to a string, the contents of which depend on the number's factors. Follow next example:
 
 If the number has 3 as a factor, output 'Diego'.
@@ -220,9 +263,21 @@ this would be a simple "Stefano".
 30's factors are 1, 2, 3, 5, 6, 10, 15, 30.
 this would be a "DiegoRiccardo".
 34 has four factors: 1, 2, 17, and 34.
-this would be "34".
+this would be "34".*/
 
+
+
+
+/*
 20)
 Create a function that given a phrase returns its acronym, like British Broadcasting Corporation returns BBC
 
 */
+ex20 = function(string){ 
+    let cut = string.split(" ")
+    let mapit = string.map((word) => word.charAt(0).toUpperCase())
+    let connect = string.join('')
+    
+}
+
+    
